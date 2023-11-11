@@ -1,0 +1,43 @@
+<!-- CUSTOM CHAT FILE UPLOAD -->
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='customchat.css') }}"
+  />
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Custom Chat</title>
+  </head>
+  <body>
+    <div class="login-message-container">
+      <h1 class="login-message">
+        Upload PDF, CSV or TXT files which you want to query!<br> Make sure that there are no spaces in your filename.
+      </h1>
+      <a class="revert-link" href="{{url_for('logout')}}"
+        >Click here to logout</a
+      >
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li class="nav-heading">My Apps</li>
+        <li><a href="{{ url_for('main_page') }}">Home</a></li>
+        <li><a href="{{ url_for('chatbot') }}">Chatbot</a></li>
+        <li><a href="{{ url_for('custom') }}">Custom Chatbot</a></li>
+        <li><a href="{{ url_for('interview') }}">Interview Prep</a></li>
+        <li><a href="{{ url_for('lf_chatbot') }}">Time Travel using Langflow</a></li>
+        <li><a href="{{ url_for('demo') }}">App Demo</a></li>
+        <li><a href="/dash1">Dash App 1</a></li>
+        <li><a href="/dash2">Dash App 2</a></li>
+        <li><a href="/dash3">Dash App 3</a></li>
+        <!-- Add more app links here -->
+      </ul>
+    </div>
+    <div class="form-container">
+      <form method="POST" action="" enctype="multipart/form-data">
+        {{ form.hidden_tag()}} {{ form.file }} {{ form.submit }}
+      </form>
+    </div>
+  </body>
+</html>

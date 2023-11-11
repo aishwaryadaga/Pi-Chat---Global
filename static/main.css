@@ -1,0 +1,82 @@
+/* LINKED TO MAIN.HTML (ALL APPS DISPLAY) */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: "Nunito", sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background: #f1f1f1;
+  }
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+
+    .sidebar {
+    width: 450px;
+    height: auto;
+    background-color: #8870bd;
+    border-radius: 10px;
+    /* position: fixed; */
+  }
+  
+  .nav-heading {
+    font-weight: bold;
+    font-size: 22px;
+    color: white;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+  }
+  
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .sidebar li {
+    padding: 10px 5px;
+  }
+  
+  .sidebar a {
+    text-decoration: none;
+    color: white;
+    display: block;
+    text-align: center;
+    font-size: 18px;
+  }
+
+  /* LOGIN MESSAGE DISPLAY */
+
+.login-message-container {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 10px;
+    /* background-color: #4caf50; */
+    background-color: #6eb530;
+    color: white;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .login-message {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .revert-link {
+    color: #fff;
+    text-decoration: underline;
+  }
+  
+  .revert-link:hover {
+    text-decoration: none;
+  }

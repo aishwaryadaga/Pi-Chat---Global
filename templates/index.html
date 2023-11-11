@@ -1,0 +1,21 @@
+<!-- FIRST PAGE UPON APP STARTING -> LOGIN/REGISTRATION LINK -->
+<!DOCTYPE html>
+<html lang="en">
+  <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="welcome">
+        <h1 class="main-heading">Conversation Street</h1>
+        <div class="links">
+          <a href="{{url_for('login')}}" class="link1">Login Page</a><br />
+          <a href="{{url_for('register')}}" class="link2">Registration Page</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

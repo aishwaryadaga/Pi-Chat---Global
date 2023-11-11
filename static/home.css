@@ -1,0 +1,73 @@
+/* INDEX.HTML -> FIRST PAGE UPON APP STARTING -> LOGIN/REGISTRATION LINK */
+
+/* Reset some default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+  height: 100vh; /* Use the full viewport height */
+  text-align: center;
+}
+
+.logo {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background-color: #fff;
+}
+
+.logo:hover {
+  background-color: #fff;
+}
+
+/* .welcome {
+  text-align: center;
+} */
+
+.main-heading {
+  font-size: 36px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.links {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.link1,
+.link2 {
+  display: inline-block;
+  font-size: 18px;
+  margin: 5px 0;
+  padding: 10px 20px;
+  background-color: #4caf50;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.link1:hover,
+.link2:hover {
+  background-color: #65b867;
+}
+
+/*
+.logo {
+  float: left; /* Float the logo image to the top left corner 
+  margin-right: 20px; /* Add some space to the right for spacing 
+}
+
+.logo img {
+  width: 50%;
+  height: auto;
+} */

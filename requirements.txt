@@ -1,0 +1,9 @@
+langchain
+openai
+python-dotenv
+flask
+flask_sqlalchemy
+flask_wtf
+wtforms
+flask_bcrypt
+langflow

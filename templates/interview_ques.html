@@ -1,0 +1,76 @@
+<!-- INTERVIEW CHATBOT  -->
+<!DOCTYPE html>
+<html lang="en">
+  <link
+    rel="stylesheet"
+    href="{{ url_for('static', filename='interview.css') }}"
+  />
+
+  <head>
+    <meta charset="UTF-8" />
+    <title>Chatbot</title>
+  </head>
+  <body>
+    <div class="login-message-container">
+      <h1 class="login-message">Interview: Type "Start" to begin.</h1>
+      <a class="revert-link" href="{{url_for('logout')}}"
+        >Click here to logout</a
+      >
+    </div>
+    <div class="sidebar">
+      <ul>
+        <li class="nav-heading">My Apps</li>
+        <li><a href="{{ url_for('main_page') }}">Home</a></li>
+        <li><a href="{{ url_for('chatbot') }}">Chatbot</a></li>
+        <li><a href="{{ url_for('custom') }}">Custom Chatbot</a></li>
+        <li><a href="{{ url_for('interview') }}">Interview Prep</a></li>
+        <li><a href="{{ url_for('lf_chatbot') }}">Time Travel using Langflow</a></li>
+        <li><a href="{{ url_for('demo') }}">App Demo</a></li>
+        <li><a href="/dash1">Dash App 1</a></li>
+        <li><a href="/dash2">Dash App 2</a></li>
+        <li><a href="/dash3">Dash App 3</a></li>
+        <!-- Add more app links here -->
+      </ul>
+    </div>
+    <div class="container">
+      <div class="chatbox">
+        <div class="chatbox__support">
+          <div class="chatbox__header">
+            <div class="chatbox__image--header">
+              <img
+                src="https://img.icons8.com/color/48/000000/circled-user-female-skin-type-5--v1.png"
+                alt="image"
+              />
+            </div>
+            <div class="chatbox__content--header">
+              <h4 class="chatbox__heading--header">Conversation Street</h4>
+              <p class="chatbox__description--header">Hi. Ask me anything!</p>
+            </div>
+          </div>
+          <div class="chatbox__messages--main">
+            <div class="loading-animation">
+              <span></span>
+              <span></span>
+              <span></span>
+            </div>
+            <div class="chatbox__messages">
+              <div></div>
+            </div>
+          </div>
+          <div class="chatbox__footer">
+            <input type="text" placeholder="Write a message" />
+            <button class="chatbox__send--footer send__button">Send</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      $SCRIPT_ROOT = {{ request.script_root|tojson }};
+    </script>
+    <script
+      type="text/javascript"
+      src="{{ url_for('static', filename='interview_app.js') }}"
+    ></script>
+  </body>
+</html>
